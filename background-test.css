@@ -24,8 +24,8 @@
     width: 420px;
     border: #dddcdc .2px solid;
     border-radius: 10px;
-    padding: 3rem 3rem;
-    margin: 2rem;
+    padding: 1rem 1rem;
+    margin: 1rem;
 
     /* box-shadow: 0 0 10px #c2c1c1; */
 }
@@ -35,8 +35,8 @@
     color: #034f84;
     font-size: 32px;
     font-weight: 500;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .input-group {
