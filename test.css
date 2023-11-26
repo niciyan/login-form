@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background: #e2c5c5;
+
+}
+.a {
+    background-color: aquamarine;
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.a h1:hover ~ span {
+    top: px;
+}
+
+.a span {
+    position: absolute;
+    
+    transform: translateY(-50%);
+    top: 50%;
+    left: 0;
+
+    background: #333;
+    color: aliceblue;
+
+    transition: top .5s ease;
+}
+
+.t {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.t .t-inside {
+    width: 800px;
+    height: 600px;
+    background: #fff;
+}
