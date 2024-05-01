@@ -12,25 +12,35 @@
             <div class="t-inside">
                 <form action="#" class="form">
                     <h1>Your Form</h1>
-                    <div class="input-group">
-                        <label for="">name</label>
-                        <input type="text" name="name" placeholder="にしやま" id="" required>
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="">name</label>
+                            <input type="text" name="name" placeholder="にしやま" id="" required>
+                            <div class="form-error">
+                                <span>form error!</span>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label for="">location</label>
+                            <input type="text" name="location" placeholder="Japan" id="" required>
+                        </div>
                     </div>
-                    <div class="input-group">
-                        <label for="">location</label>
-                        <input type="text" name="location" placeholder="Japan" id="" required>
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="">company</label>
+                            <input type="text" name="compnay" placeholder="Google?" id="" required>
+
+                        </div>
+                        <div class="input-group">
+                            <label for="">company</label>
+                            <input type="text" name="compnay" placeholder="Google?" id="" required>
+                        </div>
                     </div>
-                    <div class="input-group">
-                        <label for="">company</label>
-                        <input type="text" name="compnay" placeholder="Google?" id="" required>
-                    </div>
-                    <div class="input-group">
-                        <label for="">company</label>
-                        <input type="text" name="compnay" placeholder="Google?" id="" required>
-                    </div>
-                    <div class="input-group">
-                        <label for="">company</label>
-                        <input type="text" name="compnay" placeholder="Google?" id="" required>
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="">company</label>
+                            <input type="text" name="compnay" placeholder="Google?" id="" required>
+                        </div>
                     </div>
                     <div class="submit-group">
                         <button type="submit">submit</button>
@@ -38,7 +48,11 @@
                 </form>
             </div>
         </div>
+
+        <button class="move-btn">move</button>
+        <h4 class="move-text">move right?</h4>
     </div>
     
+    <script src="background-test.js"></script>
 </body>
 </html>

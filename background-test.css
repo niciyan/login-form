@@ -15,23 +15,48 @@
 }
 
 .t .t-inside {
-    width: 800px;
+    /* width: 1100px; */
     background: #fff;
     border-radius: 20px;
+    /* display: flex;
+    justify-content: space-evenly;
+    align-items: center; */
 }
 
 .form {
-    width: 420px;
+    /* width: 420px; */
     border: #dddcdc .2px solid;
     border-radius: 10px;
     padding: 1rem 1rem;
     margin: 1rem;
 
+    
+
     /* box-shadow: 0 0 10px #c2c1c1; */
 }
 
+.form .form-row {
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: center; */
+    align-items: start;
+    gap: 30px;
+}
+
+.form .form-row .form-error {
+    display: none;
+}
+
+.form .form-row .form-error span {
+    display: block;
+    color: rgb(248, 114, 114);
+    font-size: 14px;
+    padding-left: 10px;
+    /* font-weight: 300; */
+}
+
 .form h1 {
-    text-align: center;
+    /* text-align: center; */
     color: #034f84;
     font-size: 32px;
     font-weight: 500;
@@ -41,12 +66,14 @@
 
 .input-group {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1.2rem;
-    margin-bottom: 1.2rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: center; */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     gap: .6rem;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    /* width: 100%; */
 }
 
 .input-group label {
@@ -60,13 +87,14 @@
 }
 
 .input-group input {
-    width: 100%;
+    /* width: 100%; */
 
     border: #dddcdc 1px solid;
     border-radius: 5px;
 
     padding: .4rem .5rem;
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 .input-group input:focus {
@@ -75,7 +103,7 @@
 
 .submit-group {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .submit-group button {
@@ -93,4 +121,18 @@
 
 .submit-group button:hover {
     transform: translateX(-5px);
+}
+
+.container .move-btn {
+    padding: 12px;
+    border-radius: 20px;
+}
+
+.container .move-text {
+    display: block;
+    transition: transform 0.6s ease-in-out;
+}
+
+.container .move-text.active {
+    transform: translateX(100px);
 }
